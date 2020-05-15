@@ -10,7 +10,11 @@
       color: green;
       text-align: center;
    }
-    #special { 
+    #tags { 
+      color:green;
+      text-align: center;
+    }
+    #moretags { 
       color:green;
       text-align: center;
     }
@@ -71,30 +75,72 @@
 #button4 :hover { text-decoration: none; color:#000; }
 #button4:focus { text-decoration: none; color:#000; }
 #button4 :hover, #button4:active { text-decoration: none; color:#000; }
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
   </style>
   <body>
 
       <h1>Welcome to the world of coding!</h1>
 
-   <h2 id="twenty">In HTML you learn how to use tags such as H1 and P</h2>
+   <h2 id="intro">In HTML you learn how to use tags such as H1 and P</h2>
 
-   <p id="home">For the tags such as H1 and or P you have to the greater than or less than tags (< >)</p>
+   <h4 id="tags">For the tags such as H1 and or P you have to the greater than or less than tags (< >)</p>
 
-   <p id="special">Once you put the starting tags you have to close the tag by typing the same tag again<br>, but with a slash(/) after the first letter like (/) </p>
+   <h4 id="moretags">Once you put the starting tags you have to close the tag by typing the same tag again<br>, but with a slash(/) after the first letter like (/) </p>
 
-   <p align="left">
-    <button id="button1"><a href="#twenty">Introduction</button>
+   <h3>Here is a nice table of all the tags</h3>
+    
+   <table>
+    <tr>
+      <th>Tag</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>H1</td>
+      <td>This tag is the biggest heading of them all</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>This is a paragraph tag used for making paragraph</td>
+    </tr>
+    <tr>
+      <td>!DOCTYPE HTML</td>
+      <td>This tag is used for starting a webpage</td>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>This is what houses the code</td>
+    </tr>
+    <tr>
+      <td>Head</td>
+      <td>This is the header, where the title and CSS goes</td>
+    </tr>
+  </table>
+
+  <p>hello fams</p>
+
+  <p align="left">
+    <button id="button1"><a href="#intro">Introduction</button>
   </p>
 
   <p align="left">
-    <button id="button2"><a href="#home">Tags</a></button>
+    <button id="button2"><a href="#tags">Tags</a></button>
     </p>
 
     <p align="left">
-      <button id="button3"><a href="#special">More tags</a></button>
+      <button id="button3"><a href="#moretags">More tags</a></button>
     </p>
 
     <p align="left">
+      <button id="button4"><a href="#">NO ARGS</a></button>
+    </p>
+
+     <p align="left">
       <button id="button4"><a href="#">NO ARGS</a></button>
     </p>
 
